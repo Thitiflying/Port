@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .Port {
+  position: relative; /* ตั้งตำแหน่งให้เป็น reference */
+  overflow: hidden;   /* ป้องกันลิงก์เกินขอบโค้ง */
+}
+
+.Port a {
+  position: absolute;  /* ให้ลิงก์วางครอบพื้นที่ */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  z-index: 1;          /* ให้อยู่บนสุดเพื่อรับคลิก */
+}
+
+.Port img,
+.Port h1,
+.Port p {
+  position: relative;  /* ให้เนื้อหาอยู่บนลิงก์ */
+  z-index: 2;          /* แสดงทับลิงก์แต่ยังคลิกได้ */
+}
+    </style>
+    <div class="Port">
+  <a href="https://www.youtube.com/watch?v=w8I0_phB6Jw&list=RDPKVWK6Kp5yk&index=2" target="_blank" class="link-port"></a>
+  <img src="img/Port1.1.jpg" alt="รูป">
+  <h1>ได้รับรางวัลระดับ เหรียญทอง การแข่งขันหุ่นยนต์ผสม ระดับชั้นม.4-ม.6</h1>
+  <p>งานศิลปหัถกรรมนักเรียน ระดับเขตพื้นที่การศึกษา</p>
+</div>
+
+</body>
+</html>

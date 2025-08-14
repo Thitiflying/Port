@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <title>Contact</title>
+<style> 
+
+  body {
+      background-color: #eeced3;
+
+}
+  .social-links{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  background: white;
+  border-radius: 50px;
+  padding: 12px 20px;
+  width: 320px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+}
+
+  .link{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+.social-links:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.social-links i, .social-links img {
+  font-size: 24px;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+a.social-links { /*เพราะมีแท็กa ถึงจะลบเส้นใต้มึงอย่าลืม*/
+  text-decoration: none;
+  color: inherit; 
+}
+
+.social-links:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.background{
+  background: white;          
+  padding: 20px;               
+  border-radius: 20px;         
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 1%;
+  max-width: 400px;
+}
+.Me{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Me img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.h1{
+  margin-bottom: 20%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1, .headline {
+  font-family: 'Bebas Neue', sans-serif;/*ดูบรรทัดที่9 ประกาศฟอนต์ในhead */
+}
+
+</style>
+</head>
+
+<body>
+  <div class="navbar">
+    <div  class="logo">My Portfolio</div>
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About me.html">About me</a></li>
+          <li><a href="Activity.html">Activity</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  </div>
+<div class="background">
+<div class="link">
+  <div class="Me">
+    <img src="img/Myself.jpg" alt="It's me">
+  </div>
+  <h1>Hello This is My Contact</h1>
+  <a href="https://www.facebook.com/thitiwad.songsawat" target="_blank" class="social-links">
+    <img src="img/facebook-circular-logo.png" alt="Facebook">
+    <span class="link-text">Facebook</span>
+  </a>
+
+  <a href="https://www.instagram.com/thitiwat.songsawat/" target="_blank" class="social-links">
+    <img src="img/instagram.png" alt="Instagram">
+    <span class="link-text">Instagram</span>
+  </a>
+
+  <a href="https://www.tiktok.com/@nachinori.ijiro" target="_blank" class="social-links">
+    <img src="img/tik-tok.png" alt="TikTok">
+    <span class="link-text">Tiktok</span>
+  </a>
+
+  <a href="https://www.youtube.com/@nachinoriijiro5767" target="_blank" class="social-links">
+    <img src="img/youtube.png" alt="YouTube">
+    <span class="link-text">Youtube</span>
+  </a>
+
+  <a href="https://github.com/Thitiflying" target="_blank" class="social-links">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+    <span class="link-text">GitHub</span>
+  </a>
+</div>
+  </div>
+</body>
