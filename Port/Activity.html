@@ -10,7 +10,7 @@
 <style>
 body {
         font-family: sans-serif;
-        background-color: #a73b24;
+        background-color: #eeced3;
         margin: 0;
         padding: 20px;
     }
@@ -23,7 +23,6 @@ body {
         margin-top: 10px;
     }
 
-
     .Port {
     background: white;
     border-radius: 20px;
@@ -31,11 +30,15 @@ body {
     padding: 20px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     transition: all 0.3s ease; 
+    position: relative; 
+    overflow: hidden;   
+   
     }
 
     .Port:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    background-color: aliceblue;
     }
     .Port img {
     max-width: 100%;
@@ -56,7 +59,32 @@ body {
         word-break: keep-all;
         text-align: center;
         line-height: 1.5;
-        }
+    }
+    .Port a {
+      text-decoration: none;
+      color: black;
+      display: block;
+      height: 100%;
+    }
+
+    .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 20px;
+}
+
+    
 </style>
 <body>
   <div class="navbar">
@@ -72,39 +100,53 @@ body {
   </div>  
   <div class="Activity">
     <div class="Port">  
+    <a href="#"target="_blank" class="link-port">
       <img src="img/Port1.1.jpg">
       <h1>ได้รับรางวัลระดับ เหรียญทอง การแข่งขันหุ่นยนต์ผสม ระดับชั้นม.4-ม.6</h1>
       <p>งานศิลปหัถกรรมนักเรียน ระดับเขตพื้นที่การศึกษา</p>
+    </a>
     </div>
  <div class="Port">  
+    <a href="#"target="_blank">
       <img src="img/Port2.1.jpg">
+      <div class="overlay">กดเพื่อดูเพิ่มเติม</div>
       <h1>โครงการอบรมการเขียนโปรแกรมควบคุมหุ่นยนต์Lego Education Spike Prime Season2</h1>
       <p>โรงเรียนองค์การบริหารส่วนจังหวัดสุราษฎร์ธานี (บ้านดอนเกลี้ยง)</p>
+    </a>
     </div>
   <div class="Port">  
+    <a href="#"target="_blank">
       <img src="img/Port3.1.jpg">
       <h1>โครงการอบรบเชิงปฎิบัติการโค้ดดิ้งและนวัตกรรมส่งเสริมเพิ่มศักยภาพผู้เรียนด้านเทคโนโลยี</h1>
       <p>โรงเรียนคลองท่อมราษฎร์รังสรรค์</p>
+    </a>
     </div>
   <div class="Port">  
+    <a href="#"target="_blank">
       <img src="img/Port4.1.jpg">
       <h1>กิจกรรมWorkshop ออฟไลน์กลุ่มย่อยสำหรับผู้มีศักยภาพในกลุ่มเป้าหมายอีสปอร์ต</h1>
       <p>สมาคมกีฬาอีสปอร์ตแห่งประเทศไทย</p>
+    </a>
     </div>
-  <div class="Port">  
+  <div class="Port"> 
+    <a href="#"target="_blank">
       <img src="img/Port5.jpg">
       <h1>ค่ายเยาวชนวิศวะอุตสาหการ ครั้งที่1</h1>
       <p>สถาบันเทคโนโลยีพระจอมเกล้าคุณทหารลาดกระบัง วิทยาเขตชุมพรเขตรอุดมศักดิ์</p>
+    </a>
     </div>
   <div class="Port">  
+    <a href="#"target="_blank">
       <img src="img/Port6.jpg">
       <h1>กิจกรรมICT for The Future</h1>
       <p>โรงเรียนคลองท่อมราษฎร์รังสรรค์</p>
+    </a>
     </div>
      <div class="Port">  
+      <a href="#"target="_blank">
       <img src="img/Port7.png">
       <h1>การแข่งขันการพัฒนาเกมด้วยการโปรแกรมเชิงทัศน์ ระดับมัธยมศึกษาตอนปลาย ได้รับรางวัลรองชนะเลิศอันดับที่ 1</h1>
       <p>มหาวิทยาลัยสงขลานครินทร์</p>
+    </a>
     </div>
-    
 </body>
