@@ -5,6 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>About me</title>
 </head>
 
@@ -17,6 +21,16 @@
     .logo {
       font-family: 'Bebas Neue', sans-serif;
     }
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      text-align: left  ;
+    }
+
+    p1 {
+      font-family: "Prompt", sans-serif;
+    }
+
     .info {
     background: #e0e0e0;
     border-radius: 20px;
@@ -28,7 +42,20 @@
     max-width: auto;
     margin-right: 80%;
     left: 20%;
-    margin-top:5% ;
+    margin-top:0.5% ;
+    }
+
+    .Pai img {
+      position: absolute;
+      left: 72%;
+      bottom: 5%;
+      width: 500px;
+      height: auto;
+      object-fit: contain;
+      z-index: 2;
+      bottom: 0;
+      transform: translateX(-50%);
+      margin-top: 90%;
     }
 
   </style>
@@ -46,14 +73,25 @@
     </nav>
   </div>
 
-  <div class="info">
+  <div class="info"data-aos="fade-up">
     <h1>About me</h1>
-    <p>ชื่อ-นามสกุล : นายฐิติวัชร์ สงสวัสดิ์</p>
-    <p>ชื่อเล่น : ไผ่</p>
-    <p>อายุ : 17-18 </p>
-    <p>วันเดือนปีเกิด : 5 ธันวาคม 2550</p>
-    <p>งานอดิเรก : อ่านนวนิยาย เล่นเกม หาข้อมูลเรื่องที่สนใจ</p>
-    <a href=""></a>
+    <p1>ชื่อ-นามสกุล : นายฐิติวัชร์ สงสวัสดิ์</p>
+    <p1>ชื่อเล่น : ไผ่</p>
+    <p1>อายุ : 17-18 </p>
+    <p1>วันเดือนปีเกิด : 5 ธันวาคม 2550</p>
+    <p1>งานอดิเรก : อ่านนวนิยาย เล่นเกม ดูสื่อต่างๆ เขียนเว็บไซต์ สืบค้นในสิ่งที่ตัวเองสนใจ ทำอาหาร</p>
+    <h1>My goal</h1>
+    <p1>  เป้าหมายของผมในอนาคต หลังสำเร็จการศึกษา ผมตั้งใจจะทำงานด้าน
+Software Development หรือ cyber security ผมต้องสร้างเทคโนโลยีหรือนวัตกรรมที่สร้างประโยชน์ต่อสังคม ไม่ว่าจะเป็นด้านการอำนวยความสะดวกให้กับผู้คนในชีวิตประจำวัน หรือการเสริมสร้างความปลอดภัยให้กับชุมชนและสังคมโดยรวม 
+    </p>
     </div>
 
+    <div class="Pai">
+      <img src="img/pai3.png">
+    </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
 </body>
